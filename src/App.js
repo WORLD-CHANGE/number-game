@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import './App.css';
 
 function App() {
   const [targetNumber, setTargetNumber] = useState(0);
@@ -117,7 +116,8 @@ function App() {
                 fontSize: '1.2rem',
                 textAlign: 'center',
                 marginBottom: '15px',
-                outline: 'none'
+                outline: 'none',
+                boxSizing: 'border-box'
               }}
             />
             <button
@@ -131,7 +131,8 @@ function App() {
                 border: 'none',
                 borderRadius: '8px',
                 fontSize: '1.1rem',
-                cursor: 'pointer'
+                cursor: 'pointer',
+                boxSizing: 'border-box'
               }}
             >
               추측하기!
@@ -159,7 +160,8 @@ function App() {
                 border: 'none',
                 borderRadius: '8px',
                 fontSize: '1.1rem',
-                cursor: 'pointer'
+                cursor: 'pointer',
+                boxSizing: 'border-box'
               }}
             >
               새 게임 시작
